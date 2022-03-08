@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App/index.jsx";
+import { GlobalFonts } from "./global_styles/fonts.js";
+import { GlobalStyles } from "./global_styles/styles.js";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <GlobalFonts />
+    <GlobalStyles />
+  </>,
+  document.getElementById("root")
 );
